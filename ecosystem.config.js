@@ -16,7 +16,7 @@ module.exports = {
       time: true,
       env: {
         NODE_ENV: "production",
-        PORT: 6000,
+        PORT: 3006,
         HOSTNAME: "0.0.0.0",
       },
     },
