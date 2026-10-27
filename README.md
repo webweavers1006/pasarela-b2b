@@ -27,6 +27,24 @@ npm run build
 npm run start
 ```
 
+### PM2 (puerto 6000)
+
+```bash
+npm ci
+npm run build
+pm2 start ecosystem.config.js
+pm2 save
+```
+
+El proceso se llama `sencillopay-landing` y escucha en `0.0.0.0:6000`.
+Para levantarlo al reiniciar el servidor, ejecuta `pm2 startup` una vez y luego `pm2 save`.
+
+```bash
+pm2 status
+pm2 logs sencillopay-landing
+pm2 restart sencillopay-landing
+```
+
 ## Estructura
 
 ```
